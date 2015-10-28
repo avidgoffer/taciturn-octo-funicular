@@ -1,0 +1,171 @@
+body {
+    font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    border: solid #E2E2E2 10px;
+    border-bottom-width: 50px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h6 {
+    color: gray;
+    margin: 0;
+}
+
+.title {
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+}
+
+.create-task {
+    border-right: solid #F0F0F0 5px;
+    float: left;
+    width: 45%;
+}
+
+.task-tracker_form h2, .task-tracker_form label {
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.form_hint, .required_notification {
+    font-size: 11px;
+    color: #d45252;
+    margin: 5px 0 0 0;
+    display: inline;
+    float: right;
+}
+
+.create-task label {
+    width: 150px;
+    margin-top: 3px;
+    display: block;
+    padding: 3px;
+}
+
+.create-task input {
+    height: 20px;
+    width: 75%;
+    padding: 5px 8px;
+}
+
+.task-tracker_form textarea {
+    padding: 8px;
+    width: 75%;
+}
+
+.task-tracker_form ul {
+    list-style: none outside;
+    margin: 0px;
+    padding: 0px;
+}
+
+.task-tracker_form li {
+    padding: 12px;
+    position: relative;
+}
+
+.task-tracker_form input, .task-tracker_form textarea {
+    border: 1px solid #aaa;
+    box-shadow: 0 0 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 2px;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+    padding-right: 30px;
+}
+
+/* Button Style */
+button {
+    background-color: #434343;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+
+button:hover {
+    opacity: .85;
+    cursor: pointer;
+}
+
+#tasks {
+    border: solid #E2E2E2 5px;
+}
+
+#tasks div {
+    clear: both;
+}
+
+#tasks div:nth-child(even) {
+    background: #E2E2E2;
+}
+
+#tasks table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#tasks tr:last-child td:last-child {
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#tasks table tr:first-child td:first-child {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#tasks table tr:first-child td:last-child {
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#tasks tr:last-child td:first-child {
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#tasks tr:hover td {
+
+}
+
+#tasks tr:nth-child(odd) {
+    background-color: #e5e5e5;
+}
+
+#tasks tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+#tasks td {
+    vertical-align: middle;
+    text-align: left;
+    padding: 7px;
+    font-size: 10px;
+    font-family: Arial, serif;
+    font-weight: normal;
+    color: #000000;
+}
+
+#tasks tr td:last-child {
+    text-align: right;
+}

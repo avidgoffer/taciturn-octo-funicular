@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="task-tracker-styles.css"/>
+</head>
+<body>
+<div style="height: 100%">
+    <div class="title">
+        <div style="margin-left: 30px;">
+            <h1>Task Tracker</h1>
+            <h6>v2.0</h6>
+        </div>
+    </div>
+    <div class="task-tracker_form" style="margin-left: 30px;">
+        <div class="create-task">
+            <ul>
+                <li>Create a Task</li>
+                <li>
+                    <label for="taskName">Task Name</label>
+                    <input type="text" id="taskName" required/>
+                </li>
+                <li>
+                    <label for="date">Date</label>
+                    <input type="date" id="date" required/>
+                </li>
+                <li>
+                    <label for="assignedTo">Assigned To</label>
+                    <input type="text" id="assignedTo" required/>
+                </li>
+                <li>
+                    <button id="submit">Submit</button>
+                </li>
+            </ul>
+        </div>
+        <div style="float: left; margin-left: 20px; width: 45%">
+            <div>Existing Tasks</div>
+            <div id="tasks">
+                <table id="tasks-table">
+                </table>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="task-tracker.js"></script>
+</body>
+</html>
