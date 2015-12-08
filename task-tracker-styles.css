@@ -31,14 +31,6 @@ h6 {
     font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-.form_hint, .required_notification {
-    font-size: 11px;
-    color: #d45252;
-    margin: 5px 0 0 0;
-    display: inline;
-    float: right;
-}
-
 .create-task label {
     width: 150px;
     margin-top: 3px;
@@ -50,6 +42,13 @@ h6 {
     height: 20px;
     width: 75%;
     padding: 5px 8px;
+    background-color: #ECECEC;
+    border: 0px solid;
+    -webkit-appearance: none;
+}
+
+.create-tack input:focus {
+    outline: none;
 }
 
 .task-tracker_form textarea {
@@ -68,17 +67,6 @@ h6 {
     position: relative;
 }
 
-.task-tracker_form input, .task-tracker_form textarea {
-    border: 1px solid #aaa;
-    box-shadow: 0 0 3px #ccc, 0 10px 15px #eee inset;
-    border-radius: 2px;
-    -moz-transition: padding .25s;
-    -webkit-transition: padding .25s;
-    -o-transition: padding .25s;
-    transition: padding .25s;
-    padding-right: 30px;
-}
-
 /* Button Style */
 button {
     background-color: #434343;
@@ -94,21 +82,14 @@ button {
     text-shadow: 0 -1px 0 #396715;
 }
 
-button:hover {
-    opacity: .85;
-    cursor: pointer;
-}
-
 #tasks {
     border: solid #E2E2E2 5px;
+    max-height: 265px;
+    overflow-y: auto;
 }
 
 #tasks div {
     clear: both;
-}
-
-#tasks div:nth-child(even) {
-    background: #E2E2E2;
 }
 
 #tasks table {
@@ -144,15 +125,11 @@ button:hover {
     border-bottom-left-radius: 0;
 }
 
-#tasks tr:hover td {
-
-}
-
-#tasks tr:nth-child(odd) {
+#tasks tr:nth-child(even) {
     background-color: #e5e5e5;
 }
 
-#tasks tr:nth-child(even) {
+#tasks tr:nth-child(odd) {
     background-color: #ffffff;
 }
 
@@ -166,6 +143,15 @@ button:hover {
     color: #000000;
 }
 
+#tasks tr td:first-child {
+    width: 25%;
+}
+
+#tasks tr td:nth-child(2) {
+    width: 25%;
+}
+
 #tasks tr td:last-child {
     text-align: right;
+    width: 50%;
 }
